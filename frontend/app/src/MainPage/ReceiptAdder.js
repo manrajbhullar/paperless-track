@@ -72,11 +72,12 @@ const ReceiptAdder = ({ user, fetchReceipts }) => {
         formData.append('categories', JSON.stringify(categories));
 
         try {
-            const response = await fetch('http://localhost:5000/api/process-receipt', {
+            const BACKEND_URL = process.env.BACKEND_URL;
+            const response = await fetch('${BACKEND_URL}/api/process-receipt', {
                 method: 'POST',
                 body: formData,
             });
-
+            
             if (!response.ok) {
                 throw new Error('Failed to process the receipt');
             }
