@@ -72,7 +72,7 @@ const ReceiptAdder = ({ user, fetchReceipts }) => {
         formData.append('categories', JSON.stringify(categories));
 
         try {
-            const BACKEND_URL = process.env.BACKEND_URL;
+            const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
             const response = await fetch('${BACKEND_URL}/api/process-receipt', {
                 method: 'POST',
                 body: formData,
