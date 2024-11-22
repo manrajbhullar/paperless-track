@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.receipt-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.welcome-message {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    margin: 0;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.center-content h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.center-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.receipt-adder {
+    position: fixed;
+    z-index: 100;
+} 
+
+.camera-preview {
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    z-index: 100;
+    border: 2px solid #ccc;
+    background-color: black;
+}
+
+.capture-button {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+.sign-out-button {
+    background-color: #ff4d4d;
+}
+
+.sign-out-button:hover {
+    background-color: #ff1a1a;
+}
