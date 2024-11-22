@@ -1,0 +1,10 @@
+{
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-css-modules"
+    ],
+    "rules": {
+      "string-no-newline": true,
+      "color-no-invalid-hex": true
+    }
+  }

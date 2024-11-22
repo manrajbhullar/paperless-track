@@ -77,14 +77,6 @@
     transition: background-color 0.3s, transform 0.2s;
 }
 
-/* .change-password-button {
-    width: 140px;
-    /* background-color: #4caf50;
-    color: white; */
-    /* font-size: 14px;
-    margin-top: -45px;
-    margin-left: 700px;
-} */ */
 
 .change-password-button:hover {
     /* background-color: #45a049; */
