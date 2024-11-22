@@ -72,9 +72,7 @@ const ReceiptAdder = ({ user, fetchReceipts }) => {
         formData.append('categories', JSON.stringify(categories));
 
         try {
-            const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-            const URL = BACKEND_URL = '/api/process-receipt';
-            const response = await fetch(URL, {
+            const response = await fetch('https://paperless-track-backend.vercel.app/api/process-receipt', {
                 method: 'POST',
                 body: formData,
             });
