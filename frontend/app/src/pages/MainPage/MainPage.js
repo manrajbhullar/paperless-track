@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getFirestore, collection, getDocs, doc, getDoc } from 'firebase/firestore';
-import '../MainPage.css';
+import './MainPage.css';
 import ReceiptAdder from './components/ReceiptAdder';
 import ReceiptCard from './components/ReceiptCard';
 import { Typography, Box } from '@mui/material';
