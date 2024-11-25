@@ -13,7 +13,7 @@ import Dashboard from './pages/MainPage/MainPage';
 import './styles/style.css'; 
 import ManualUpload from './pages/MainPage/components/ManualEntry';
 import LandingPage from './pages/LandingPage/LandingPage';  // Import the Header (landing page)
-import ErrorBoundary from './components/ErrorBoundary'; // Adjust the import path as necessary
+import ErrorBoundary from './ErrorBoundary'; // Adjust the import path as necessary
 
 const App = () => {
     const [isSignUp, setIsSignUp] = useState(false); 
@@ -21,7 +21,7 @@ const App = () => {
     const [loading, setLoading] = useState(true); 
 
     const toggleForm = () => {
-        setIsSignUp(!isSignUp); 
+        setIsSignUp(!isSignUp);
     };
 
     // Monitor user authentication state
