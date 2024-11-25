@@ -18,16 +18,16 @@ jest.mock('firebase/auth', () => ({
 }));
 
 // Mock components
-jest.mock('./Navbar/Navbar', () => () => <div>Navbar</div>);
-jest.mock('./SignUp/SignUp', () => () => <div>SignUp</div>);
-jest.mock('./SignIn/SignIn', () => () => <div>SignIn</div>);
-jest.mock('./ForgotPassword', () => () => <div>ForgotPassword</div>);
-jest.mock('./MainPage/MainPage', () => () => <div>Dashboard</div>);
-jest.mock('./Analytics', () => () => <div>Analytics</div>);
-jest.mock('./Categories/Categories', () => () => <div>Categories</div>);
-jest.mock('./Userprofile', () => () => <div>UserProfile</div>);
-jest.mock('./MainPage/ManualEntry', () => () => <div>ManualUpload</div>);
-jest.mock('./LandingPage', () => () => <div>LandingPage</div>);
+jest.mock('./components/Navbar', () => () => <div>Navbar</div>);
+jest.mock('./pages/Auth/SignUp', () => () => <div>SignUp</div>);
+jest.mock('./pages/Auth/SignIn', () => () => <div>SignIn</div>);
+jest.mock('./pages/Auth/ForgotPassword', () => () => <div>ForgotPassword</div>);
+jest.mock('./pages/MainPage/MainPage', () => () => <div>Dashboard</div>);
+jest.mock('./pages/Analytics/Analytics', () => () => <div>Analytics</div>);
+jest.mock('./pages/Categories/Categories', () => () => <div>Categories</div>);
+jest.mock('./pages/UserProfile/UserProfile', () => () => <div>UserProfile</div>);
+jest.mock('./pages/MainPage/components/ManualEntry', () => () => <div>ManualUpload</div>);
+jest.mock('./pages/LandingPage/LandingPage', () => () => <div>LandingPage</div>);
 
 // Mock BrowserRouter to avoid nested router issue
 jest.mock('react-router-dom', () => {
