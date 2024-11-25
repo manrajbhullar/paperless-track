@@ -2,18 +2,18 @@ import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { auth } from './firebaseConfig'; 
 import { onAuthStateChanged } from 'firebase/auth'; 
-import SignUp from './SignUp/SignUp';
-import SignIn from './SignIn/SignIn';
-import Navbar from './Navbar/Navbar'; 
-import Analytics from './Analytics';
-import Categories from './Categories/Categories';
-import UserProfile from './Userprofile';
-import ForgotPassword from './ForgotPassword';
-import Dashboard from './MainPage/MainPage'; 
-import './style.css'; 
-import ManualUpload from './MainPage/ManualEntry';
-import LandingPage from './LandingPage';  // Import the Header (landing page)
-import ErrorBoundary from './ErrorBoundary'; // Adjust the import path as necessary
+import SignUp from './pages/Auth/SignUp';
+import SignIn from './pages/Auth/SignIn';
+import Navbar from './components/Navbar'; 
+import Analytics from './pages/Analytics/Analytics';
+import Categories from './pages/Categories/Categories';
+import UserProfile from './pages/UserProfile/UserProfile';
+import ForgotPassword from './pages/Auth/ForgotPassword';
+import Dashboard from './pages/MainPage/MainPage'; 
+import './styles/style.css'; 
+import ManualUpload from './pages/MainPage/components/ManualEntry';
+import LandingPage from './pages/LandingPage/LandingPage';  // Import the Header (landing page)
+import ErrorBoundary from './components/ErrorBoundary'; // Adjust the import path as necessary
 
 const App = () => {
     const [isSignUp, setIsSignUp] = useState(false); 
