@@ -12,8 +12,8 @@ jest.mock('firebase/firestore', () => ({
 }));
 
 // Mock child components
-jest.mock('./CategoryAdd', () => () => <div>CategoryAdd</div>);
-jest.mock('./CategoryCard', () => ({ id, name, monthlyBudget, color }) => (
+jest.mock('./components/CategoryAdd', () => () => <div>CategoryAdd</div>);
+jest.mock('./components/CategoryCard', () => ({ id, name, monthlyBudget, color }) => (
   <div data-testid="category-card">
     <div>{name}</div>
     <div>{monthlyBudget}</div>
