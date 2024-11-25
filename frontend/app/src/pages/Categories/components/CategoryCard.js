@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, CardHeader, CardContent, Typography, CardActions, Button, TextField, Box } from '@mui/material';
 import { getFirestore, doc, deleteDoc, updateDoc, collection, query, getDocs } from 'firebase/firestore';
-import { Theme } from "../../styles/themes/Theme"
+import { Theme } from "../../../styles/themes/Theme"
 
 const db = getFirestore();
 

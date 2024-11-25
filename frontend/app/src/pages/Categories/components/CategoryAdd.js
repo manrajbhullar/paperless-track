@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Fab, Tooltip, Dialog, DialogTitle, DialogContent, DialogActions, Button, TextField, Box} from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import { getFirestore, collection, addDoc, getDocs } from 'firebase/firestore';
-import { Theme } from '../../styles/themes/Theme'
+import { Theme } from '../../../styles/themes/Theme'
 
 
 const db = getFirestore();
